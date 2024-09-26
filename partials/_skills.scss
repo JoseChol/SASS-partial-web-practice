@@ -1,0 +1,36 @@
+.skills{
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+
+    .my-skills{
+        // background-color: orangered;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        color: yellow;
+        font-size: 2rem;
+        @media (max-width:768px) {
+          display: flex;  
+        }
+    }
+    .skill-level{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        background-color: lime;
+        gap: 1rem;
+        .description{
+            width: 50%;
+            height: 100%;
+            background-color: orange;
+        }
+        .skill-rating{
+            width: 50%;
+            height: 100%;
+            background-color: red;
+        }
+    }
+   
+}

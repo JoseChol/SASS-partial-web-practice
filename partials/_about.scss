@@ -1,7 +1,12 @@
 .about-me{
     width: 100%;
     min-height: 120vh;
-    background-color: rgb(8, 8, 19);
+    background-color:#0A101E;
+    @media (max-width:768px) {
+        display: flex;
+        flex-direction: column;
+    }
+
      .intro{
         width: 30%;
         height: 30%;

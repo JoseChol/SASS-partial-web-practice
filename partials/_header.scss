@@ -1,32 +1,63 @@
 .header{
     width: 100%;
-    height: 15%;
-    background-color: rgb(8, 10, 19);
-    .nav-bar{
-        width: 100%;
+    min-height: 15vh;
+    display: flex;
+    padding: 0 8rem;
+    background-color: rgb(7,14,27);
+
+    @media (max-width:1115px) {
+        flex-direction: column;
+    }
+    @media (max-width:990px) {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+    
+    }
+
+    .logo-container{
+        width: 20%;
+        height: 15vh;
         display: flex;
         align-items: center;
-        gap: 10rem;
-        padding: 2rem; 
-        .links{
-            display: flex;
-            gap: 2rem;
-            a{
-                color: white;
-                text-decoration: none;
-            }
-            .alone{
-                color: yellow;
-            }
-        }
-        .phone{
-            display: flex;
-            font-size: 1.5rem;
+
+       @media (max-width:990px) {
+        width: 10rem;
+       
+       }
+    }
+    .nav-bar{
+        width: 80%;
+        height: 15vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 2rem;
+        color: white;
+        a{
+            text-decoration: none;
             color: white;
-            gap: 1rem;
-            p{
-                color: yellow;
-            }
         }
-    }  
+
+        @media (max-width:1115px) {
+            width: 90%;
+        }
+        @media (max-width:990px) {
+            display: none;
+        }
+    }
+    .menu-container{
+        min-width: 5%;
+        height: 15vh;
+        display: none;
+        font-size: 2rem;
+        @media (max-width:990px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: grey;
+            
+        }
+    }
+       
 }
