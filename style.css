@@ -46,7 +46,6 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-left: 2rem;
-  color: white;
 }
 .header .nav-bar a {
   text-decoration: none;
@@ -93,45 +92,45 @@ body {
   gap: 2rem;
   padding: 5rem;
 }
-@media (max-width: 768px) {
-  .hero .content {
-    display: flex;
-    flex-direction: column;
-  }
-}
 .hero .content .greet {
   color: yellow;
-  min-width: 100%;
   font-size: 2rem;
 }
-.hero .job {
+.hero .content .name {
+  font-size: 4rem;
+}
+@media (max-width: 768px) {
+  .hero .content .name {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+  }
+}
+.hero .content .job {
   font-family: sans-serif;
   font-size: 2rem;
 }
-@media (max-width: 768px) {
-  .hero .job {
-    display: flex;
-    flex-direction: column;
-  }
+.hero .content .call-to-action {
+  width: 100%;
+  height: 100%;
 }
-.hero .btn {
+.hero .content .btn {
   width: 40%;
-  height: 200%;
+  padding: 1rem 3rem;
   border-radius: 2rem 2rem 2rem 2rem;
   background-color: orange;
   border: none;
 }
-
-.pic-container {
+.hero .pic-container {
   width: 50%;
   height: 115vh;
 }
-.pic-container img {
+.hero .pic-container img {
   width: 100%;
   height: 100%;
 }
-@media (max-width: 768px) {
-  .pic-container img {
+@media (max-width: 990px) {
+  .hero .pic-container {
     display: none;
   }
 }
@@ -283,7 +282,7 @@ body {
 .skills {
   width: 100%;
   height: 100%;
-  background-color: blue;
+  background-color: #070D1B;
 }
 .skills .my-skills {
   display: flex;
@@ -302,16 +301,51 @@ body {
   width: 100%;
   height: 80%;
   display: flex;
-  background-color: lime;
   gap: 1rem;
+  color: white;
+  padding: 3rem;
 }
 .skills .skill-level .description {
   width: 50%;
   height: 100%;
-  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 2rem;
+}
+.skills .skill-level .description h2 {
+  font-size: 2rem;
 }
 .skills .skill-level .skill-rating {
   width: 50%;
   height: 100%;
-  background-color: red;
+  color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.skills .skill-level .skill-rating .photoshop {
+  display: flex;
+  justify-content: space-between;
+}
+.skills .skill-level .skill-rating .motion-graphics {
+  display: flex;
+  justify-content: space-between;
+}
+.skills .skill-level .skill-rating .adobe-xd {
+  display: flex;
+  justify-content: space-between;
+}
+.skills .skill-level .skill-rating .ux-design {
+  display: flex;
+  justify-content: space-between;
+}
+.skills .skill-level .skill-rating .html {
+  display: flex;
+  justify-content: space-between;
+}
+.skills .skill-level .skill-rating .digital-marketing {
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */
